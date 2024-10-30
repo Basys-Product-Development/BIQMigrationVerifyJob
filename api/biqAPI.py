@@ -45,8 +45,8 @@ def fetch_data_biqAPI():
                     print(f"No transactions found in batch {batch_number}.")
                     no_transactions_found_count += 1
 
-                    if no_transactions_found_count >= 10:
-                        print("Reached 10 consecutive empty batches. Ending loop.")
+                    if no_transactions_found_count >= 1:
+                        print("Reached 1 consecutive empty batches. Ending loop.")
                         break
                 else:
                     transactions = result.findall('.//{https://connect.synapsegateway.net/}QueryTransaction')

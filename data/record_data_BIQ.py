@@ -1,8 +1,7 @@
 import csv
 
 TRANSACTION_HEADERS_BIQ = [
-    "Proc_ID", "Tran_Type", "Tran_Amt", "Card_Num", 
-    "Contact_FirstName", "Contact_LastName"
+    "Proc_ID"
 ]
 
 def save_transactions_to_csv_biqAPI(transactions, filename="transactions_BIQ.csv"):

@@ -1,8 +1,7 @@
 import csv
 
 TRANSACTION_HEADERS_IQPro = [
-    "transactionId", "type", "amount", "maskedCard",
-    "billingFirstName", "billingLastName"
+    "transactionId"
 ]
 
 def save_transactions_to_csv_IQPro(transactions, filename="transactions_IQPro.csv"):
