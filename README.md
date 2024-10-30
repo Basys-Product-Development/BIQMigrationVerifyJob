@@ -68,12 +68,12 @@ Generate Comparison Report: Outputs results to comparison_report.csv, listing ea
 Code Structure
 main.py: Main script that orchestrates the API calls, saves data, and triggers comparison.
 api/:
-biqAPI.py: Handles data retrieval from API 1.
-iqproAPI.py: Handles data retrieval from API 2.
-iqproApiGetTransaction.py: Handles data retrieval from API 3, which uses transactionId from API 2 to get sourceTransactionId.
+biqAPI.py: Handles data retrieval from biqAPI.
+iqproAPI.py: Handles data retrieval from iqproAPI.
+iqproApiGetTransaction.py: Handles data retrieval from iqproApiGetTransaction, which uses transactionId from iqproAPI to get sourceTransactionId.
 data/:
-record_data_BIQ.py: Saves data from API 1 to transactions_BIQ.csv.
-record_data_IQPRO.py: Saves data from API 2 to transactions_iqpro.csv.
-record_data_IQPRO_GetTransactions.py: Saves data from API 3 to source_transactions.csv.
-read_data_IQPRO.py: Reads transactionId values from transactions_iqpro.csv for use in API 3.
+record_data_BIQ.py: Saves data from biqAPI to transactions_BIQ.csv.
+record_data_IQPRO.py: Saves data from iqproAPI to transactions_iqpro.csv.
+record_data_IQPRO_GetTransactions.py: Saves data from iqproApiGetTransaction to source_transactions.csv.
+read_data_IQPRO.py: Reads transactionId values from transactions_iqpro.csv for use in iqproApiGetTransaction.
 compare_data.py: Compares sourceTransactionId and Proc_ID values between source_transactions.csv and transactions_BIQ.csv.
