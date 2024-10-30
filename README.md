@@ -1,6 +1,3 @@
-Certainly! Here’s the entire response formatted as markdown:
-
-markdown
 # BIQMigrationVerifyJob
 
 ## Overview
@@ -11,41 +8,48 @@ Ensure you have Python and pip installed. You can verify by running:
 ```bash
 python --version
 pip --version
+```
 If pip isn’t installed, you can manually install it:
 
 Download the get-pip.py script from bootstrap.pypa.io.
 Open Command Prompt, navigate to the directory containing get-pip.py, then run:
-bash
+```bash
 python get-pip.py
+```
 Setting Up a Virtual Environment
 To isolate project dependencies, it’s recommended to use a virtual environment:
 
-bash
+```bash
 python -m venv env
+```
 Activate the environment:
 
 Windows:
-bash
+```bash
 env\Scripts\activate
+```
 macOS/Linux:
-bash
+```bash
 source env/bin/activate
+```
 Installing Dependencies
 After activating the virtual environment, install the required packages:
 
-bash
+```bash
 pip install -r requirements.txt
+```
 Configuration
 Update the necessary variables in config.py before running the project. This includes API URLs, tokens, and any other credentials or parameters specific to your setup.
 
 Running the Project
 To start the project, run:
 
-bash
+```bash
 python main.py
+```
 This will execute the sequence of API calls, save transaction data to CSV files, and perform the comparison to generate a discrepancy report.
 
-Additional Notes
+## Additional Notes
 The comparison report is saved to comparison_report.csv in the project directory.
 Be sure to check your config.py setup before each run to ensure all credentials and endpoints are correct.
 Compare Data Functionality
